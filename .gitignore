@@ -40,3 +40,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Angular Specific generated files ignore
+/src/app/**/*.js
+/src/app/**/*.map
