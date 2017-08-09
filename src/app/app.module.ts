@@ -16,6 +16,11 @@ import { DashboardComponent } from './dashboard.component';
     FormsModule, //<- Needed to import NgModule
     RouterModule.forRoot([
       {
+        path: '',
+        redirectTo: '/dashboard',
+        pathMatch: 'full'
+      },
+      {
         path: 'dashboard',
         component: DashboardComponent
       },
