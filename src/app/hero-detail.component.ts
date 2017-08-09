@@ -3,7 +3,6 @@ import { ActivatedRoute, ParamMap } from "@angular/router";
 import { Location } from "@angular/common";
 
 import {Hero} from './hero';
-import { HeroService } from "./hero.service";
 
 @Component({
     selector: 'hero-detail',
@@ -20,14 +19,5 @@ import { HeroService } from "./hero.service";
 })
 
 export class HeroDetailComponent{
-    constructor(
-        private heroService: HeroService,
-        private route: ActivatedRoute,
-        private location: Location
-    ) {}
-
-
     @Input() hero: Hero;
-
- 
 }
